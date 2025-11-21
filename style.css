@@ -3,9 +3,121 @@
 /* ########################### */
 /* GLOBAL */
 /* ########################### */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    border: none;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --accent:rgb(244,92,54);
+    --accent2:rgb(189,56,22);
+    --bg:#FFF;
+    --text:#060606;
+}
+
+body{
+    background: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+}
+
+section{
+    padding: 50px 100px;
+}
+
+/* ########################### */
+/* NAVIGATION */
+/* ########################### */
+
+nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+nav.active{
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+
+nav .logo img{
+    width: 40px;
+}
+
+nav .navigation{
+    display: flex;
+}
+
+nav .navigation li{
+    position: relative;
+}
+
+nav .navigation a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: var(--text);
+    font-weight: 500;
+}
+
+nav .navigation a::after, nav .navigation a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: var(--accent);
+    transition: width 0.2s ease-in-out;
+}
+
+nav .navigation a::after{
+    top:-4px;
+}
+
+nav .navigation a::before{
+    bottom:-4px;
+}
+
+nav .navigation a:hover::before,
+nav .navigation a:hover::after, 
+nav .navigation a.active::before, 
+nav .navigation a.active::after{
+    width: 100%;
+}
+
+#burger-menu{
+    color: var(--text);
+    font-size: 1.6rem;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+#burger-menu:hover{
+    color: var(--accent);
+}
+
+.inscription{
+    font-weight: 500;
+    padding: 10px 20px;
+    color: var(--bg);
+    background: var(--accent);
+    border-radius: 7px;
+    transition: 0.2S ease-in-out;
+}
+
+.inscription:hover{
+    background: var(--accent2);
 }
