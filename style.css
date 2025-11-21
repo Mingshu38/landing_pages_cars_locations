@@ -46,6 +46,20 @@ section{
     background: var(--accent2);
 }
 
+.section-heading{
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.section-heading span{
+    color: var(--accent);
+    font-weight: 500;
+}
+.section-heading h2{
+    font-size: clamp(25px, 4vw, 40px);
+    
+}
+
 /* ########################### */
 /* NAVIGATION */
 /* ########################### */
@@ -209,5 +223,66 @@ nav .navigation a.active::after{
 }
 
 .home-form .btn:hover{
+    background: var(--accent2);
+}
+
+/* ########################### */
+/* VOITURE */
+/* ########################### */
+
+.cars-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px,auto));
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.cars-container .box-car{
+    text-align: center;
+    padding: 20px;
+    background: var(--bg);
+    position: relative;
+    transition: 0.2s ease-in-out;
+}
+
+.cars-container .box-car::after,.cars-container .box-car::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: var(--accent);
+    transition: width 0.2s ease-in-out, 0.2s ease-in-out;
+    z-index: -1;
+}
+
+.cars-container .box-car::after{
+    bottom: -0.2rem;
+    right: -0.2rem;
+}
+
+.cars-container .box-car::before{
+    top: -0.2rem;
+    left: -0.2rem;
+}
+
+.cars-container .box-car:hover{
+    background: #E2E2E2;
+}
+
+.cars-container .box-car:hover .bxr{
+    color: var(--accent);
+}
+
+.cars-container .box-car:hover::after, .cars-container .box-car:hover::before{
+    width: 100%;
+    height: 100%;
+}
+
+.cars-container .box-car .bxr{
+    font-size: 3rem;
+}
+
+.cars-container .box-car:hover::before{
     background: var(--accent2);
 }
