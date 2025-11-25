@@ -369,3 +369,51 @@ nav .navigation a.active::after{
 .about-content p{
     margin: 1rem 0;
 }
+
+/* ########################### */
+/* REVIEWS */
+/* ########################### */
+
+.reviews-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 1rem;
+}
+
+.box-rev{
+    text-align: center;
+    box-shadow: 1px 4px 5px rgba(0,0,0,0.2);
+    border-bottom: 2px solid var(--accent);
+    padding: 1rem;
+}
+
+.box-rev:hover{
+    background: #E2E2E2;
+}
+
+.rev-img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 1rem auto;
+}
+
+.rev-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.stars{
+    margin-bottom: 1rem;
+}
+
+.stars .bxr{
+    color: orange;
+}
+
+.box-rev h5{
+    font-size: 1.2rem;
+}
