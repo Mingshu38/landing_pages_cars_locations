@@ -417,3 +417,38 @@ nav .navigation a.active::after{
 .box-rev h5{
     font-size: 1.2rem;
 }
+
+/* ########################### */
+/* NEWSLETTER */
+/* ########################### */
+
+.newsletter{
+    background: linear-gradient(to top right, var(--accent2), var(--accent));
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 1rem;
+}
+
+.newsletter h2{
+    color: var(--bg);
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+.news-box{
+    margin-top: 1rem;
+    background: var(--bg);
+    border-radius: 7px;
+    padding: 4px 8px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-box input{
+    flex: 1 1 auto;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 1rem;
+}
