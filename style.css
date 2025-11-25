@@ -343,3 +343,29 @@ nav .navigation a.active::after{
     font-size: 0.8rem;
     font-weight: 500;
 }
+
+/* ########################### */
+/* ABOUT */
+/* ########################### */
+
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-img img{
+    width: 100%;
+}
+
+.about-content span{
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.about-content p{
+    margin: 1rem 0;
+}
