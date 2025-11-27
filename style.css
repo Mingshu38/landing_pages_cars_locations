@@ -452,3 +452,63 @@ nav .navigation a.active::after{
     border-radius: 7px;
     font-size: 1rem;
 }
+
+/* ########################### */
+/* FOOTER */
+/* ########################### */
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 1.5rem;
+    padding: 50px 20px;
+    color: var(--bg);
+    background: var(--text);
+}
+
+footer .social{
+    margin-top: 0.5rem;
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+footer .social .bx{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--accent);
+    color: var(--bg);
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+    border-radius: 50%;
+}
+
+footer .social .bx:hover{
+    background: var(--accent2);
+}
+
+footer h2{
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+footer a{
+    color: var(--accent);
+}
+
+footer a:hover{
+    color: var(--accent2);
+}
+
+footer img{
+    width: 50px;
+}
+
+.copy{
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 13px;
+    background: var(--bg);
+}
