@@ -512,3 +512,90 @@ footer img{
     font-size: 13px;
     background: var(--bg);
 }
+
+/* ########################### */
+/* MEDIA QUERIES */
+/* ########################### */
+
+@media screen and (max-width:1050px){
+    nav{
+        padding: 1rem;
+    }
+    #burger-menu{
+        display: block;
+    }
+    .navigation{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        flex-direction: column;
+        row-gap: 2rem;
+        width: 180px;
+        min-height: 100vh;
+        background: var(--bg);
+        box-shadow: 5px 0 5px rgba(0,0,0,0.2);
+        padding: 1rem 0;
+        transition: 0.2s ease-in-out;
+    }
+    .navigation.active{
+        right: 0;
+    }
+}
+@media screen and (max-width:991px){
+    section{
+        padding: 50px 50px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .home-form form{
+        left: 40px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .home{
+        grid-template-columns: 1fr;
+    }
+
+    .home-form form{
+        position: unset;
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    .about-container{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-img{
+        padding: 1rem;
+        order: 2;
+    }
+}
+
+@media screen and (max-width:563px){
+    section{
+        padding: 50px 14px;
+    }
+    .news-box{
+        width: 280px;
+    }
+
+    #home{
+        margin-top: 3rem;
+    }
+
+    .copy{
+        padding: 1rem;
+    }
+
+    .services-container{
+        grid-template-columns: repeat(auti-fit, minmax(240px,auto));
+    }
+
+    .home-form form{
+        padding-top: 2rem;
+    }
+}
